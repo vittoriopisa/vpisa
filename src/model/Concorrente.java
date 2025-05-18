@@ -46,4 +46,10 @@ public class Concorrente extends Utente {
             team.aggiungiNuovoConcorrente(this); // Associa il concorrente al team
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", dataIscrizione='" + dataIscrizione + ", status='" + status + ", team='" + (team!=null ? team.toString() : null) +'}';
+    }
 }

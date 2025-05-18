@@ -6,6 +6,23 @@ public class Valutazione {
     private int punteggio;
     private String feedback;
 
+    //Costruttore
+    public Valutazione(Team team, Giudice giudice, int punteggio, String feedback) throws IllegalArgumentException {
+        if(team !=null) {
+            this.team = team;
+            team.aggiungiNuovaValutazione(this);
+        }
+        if(giudice !=null) {
+            this.giudice = giudice;
+            giudice.aggiungiNuovaValutazione(this);
+        }
+        if (punteggio < 0 || punteggio > 10) {
+            throw new IllegalArgumentException("Punteggio non valido");
+        }
+        this.punteggio = punteggio;
+        this.feedback = feedback;
+    }
+
     // Setter per Team
     public void setTeam(Team team) {
         if (team != null) {
@@ -23,12 +40,12 @@ public class Valutazione {
     }
 
     // Setter per Punteggio
-    public void setPunteggio(int punteggio) {
-        if (punteggio >= 0 && punteggio <= 10) {
-            this.punteggio = punteggio;
-        } else {
-            System.out.println("Punteggio non valido");
+    public void setPunteggio(int punteggio) throws IllegalArgumentException{
+        if (punteggio < 0 || punteggio > 10) {
+            throw new IllegalArgumentException("Punteggio non valido");
         }
+            this.punteggio=punteggio;
+
     }
 
     // Setter per Feedback
@@ -54,5 +71,15 @@ public class Valutazione {
     // Getter per Feedback
     public String getFeedback() {
         return feedback;
+    }
+
+    @Override
+    public String toString() {
+        return "Valutazione{" +
+                "team=" + (team != null ? team.getNome() : "null") +
+                ", giudice=" + (giudice != null ? giudice.getNome() + " " + giudice.getCognome() : "null") +
+                ", punteggio=" + punteggio +
+                ", feedback='" + feedback +
+                '}';
     }
 }

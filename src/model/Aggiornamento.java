@@ -5,6 +5,21 @@ public class Aggiornamento {
     private Documento documento;
     private String contenuto;
 
+    // Costruttore
+    public Aggiornamento(Team team, Documento documento, String contenuto) {
+        if (team != null) {
+            this.team = team;
+            team.aggiungiNuovoAggiornamento(this);
+        }
+
+        if (documento != null) {
+            this.documento = documento;
+            documento.aggiungiNuovoAggiornamento(this);
+        }
+
+        this.contenuto = contenuto;
+    }
+
     // Setter per Team
     public void setTeam(Team team) {
         if (team != null) {
@@ -39,6 +54,15 @@ public class Aggiornamento {
     // Getter per Contenuto
     public String getContenuto() {
         return contenuto;
+    }
+
+    @Override
+    public String toString() {
+        return "Aggiornamento{" +
+                "team=" + (team != null ? team.toString() : "null") +
+                ", documento=" + (documento != null ? documento.toString() : "null") +
+                ", contenuto='" + contenuto +
+                '}';
     }
 }
 

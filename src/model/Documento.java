@@ -15,7 +15,13 @@ public class Documento {
     private List<Aggiornamento> aggiornamenti; // Nuovo campo per gli aggiornamenti
 
     // Costruttore
-    public Documento() {
+    public Documento(String descrizione, String titolo, LocalDate dataCreazione, String formato, double dimensione, String tipo)  {
+        this.descrizione = descrizione;
+        this.titolo=titolo;
+        this.dataCreazione=dataCreazione;
+        this.formato=formato;
+        this.dimensione=dimensione;
+        this.tipo=tipo;
         this.commenti = new ArrayList<>();
         this.aggiornamenti = new ArrayList<>(); // Inizializza la lista degli aggiornamenti// Inizializza la lista dei commenti
     }
@@ -97,5 +103,19 @@ public class Documento {
 
     public void setTipo(String tipo) {
         this.tipo=tipo;
+    }
+
+    @Override
+    public String toString() {
+        return "Documento{" +
+                "descrizione='" + descrizione + '\'' +
+                ", titolo='" + titolo + '\'' +
+                ", dataCreazione=" + dataCreazione +
+                ", formato='" + formato + '\'' +
+                ", dimensione=" + dimensione +
+                ", tipo='" + tipo + '\'' +
+                ", commenti=" + commenti +
+                ", aggiornamenti=" + aggiornamenti +
+                '}';
     }
 }

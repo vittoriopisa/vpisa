@@ -84,4 +84,17 @@ public class Hackathon {
             this.organizzatori.add(nuovoOrganizzatore);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Hackathon{" +
+                "nome='" + nome + '\'' +
+                ", descrizione='" + descrizione +
+                ", luogo='" + luogo +
+                ", dataInizio='" + dataInizio +
+                ", dataFine='" + dataFine +
+                ", teams=" + teams +
+                ", organizzatori=" + organizzatori +
+                '}';
+    }
 }

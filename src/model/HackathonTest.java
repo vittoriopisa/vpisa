@@ -4,116 +4,84 @@ import java.time.LocalDate;
 
 public class HackathonTest {
     public static void main(String[] args) {
-        // Creazione di un Hackathon
-        Hackathon hackathon = new Hackathon(
-                "Hackathon Creatività",
-                "Evento per sviluppatori innovativi",
-                "Roma",
-                "2025-06-01",
-                "2025-06-05"
+        System.out.println("Avvio test Hackathon...\n");
 
-        );
+        // Test Hackathon
+        Hackathon hackathon = new Hackathon("Hackathon 2025", "Evento tecnologico", "Napoli",
+                "12-05-2025", "14-05-2025");
 
-        // Creazione di organizzatori
-        Organizzatore organizzatore = new Organizzatore(
-                "Luca",
-                "Verdi",
-                "luca.verdi@example.com",
-                "Coordinatore",
-                LocalDate.of(2023, 5, 15) // Data di registrazione
+        System.out.println("Test Hackathon:");
+        System.out.println("Nome: " + (hackathon.getNome().equals("Hackathon 2025") ? "OK" : "Errore"));
+        System.out.println("Descrizione: " + (hackathon.getDescrizione().equals("Evento tecnologico") ? "OK" : "Errore"));
+        System.out.println("Luogo: " + (hackathon.getLuogo().equals("Napoli") ? "OK" : "Errore"));
 
-        );
+        // Test Organizzatore
+        Organizzatore organizzatore = new Organizzatore("Marco", "Bianchi", "marco.bianchi@example.com",
+                "Coordinatore", LocalDate.of(2024, 4, 1));
 
+        System.out.println("\nTest Organizzatore:");
+        System.out.println("Nome: " + (organizzatore.getNome().equals("Marco") ? "OK" : "Errore"));
+        System.out.println("Ruolo: " + (organizzatore.getRuolo().equals("Coordinatore") ? "OK" : "Errore"));
 
+        // Test Team
+        Team team = new Team("Team Alpha", 5, hackathon);
+        hackathon.aggiungiNuovoTeam(team);
 
-        // Aggiunta degli organizzatori all'Hackathon
-        hackathon.aggiungiNuovoOrganizzatore(organizzatore);
+        System.out.println("\nTest Team:");
+        System.out.println("Nome: " + (team.getNome().equals("Team Alpha") ? "OK" : "Errore"));
+        System.out.println("Dimensione: " + (team.getDimensione() == 5 ? "OK" : "Errore"));
+        System.out.println("Hackathon: " + (team.getHackathon() != null ? "OK" : "Errore"));
 
+        // Test Concorrente
+        Concorrente concorrente = new Concorrente("Giulia", "Rossi", "giulia.rossi@example.com",
+                LocalDate.of(2024, 5, 1), LocalDate.of(2024, 5, 10), true, team);
+        team.aggiungiNuovoConcorrente(concorrente);
 
-        // Creazione di team
-        Team team1 = new Team("Squadra Alfa");
-        Team team2 = new Team("Squadra Beta");
+        System.out.println("\nTest Concorrente:");
+        System.out.println("Nome: " + (concorrente.getNome().equals("Giulia") ? "OK" : "Errore"));
+        System.out.println("Status: " + (concorrente.getStatus() ? "OK" : "Errore"));
+        System.out.println("Team: " + (concorrente.getTeam() != null ? "OK" : "Errore"));
 
-        // Impostare Hackathon nei team
-        team1.setHackathon(hackathon);
-        team2.setHackathon(hackathon);
+        // Test Utente
+        try {
+            Utente utente = new Utente("Elena", "Verdi", "elena.verdi@example.com", LocalDate.of(2024, 3, 1));
 
-        // Aggiunta dei team all'Hackathon
-        hackathon.aggiungiNuovoTeam(team1);
-        hackathon.aggiungiNuovoTeam(team2);
+            System.out.println("\nTest Utente:");
+            System.out.println("Nome: " + (utente.getNome().equals("Elena") ? "OK" : "Errore"));
+            System.out.println("Email valida: " + (utente.getEmail().contains("@") ? "OK" : "Errore"));
+        } catch(IllegalArgumentException e) {
+            System.out.println("Errore: " + e.getMessage());
+        }
+        // Test Giudice
+        Giudice giudice = new Giudice("Laura", "Verdi", "laura.verdi@example.com", LocalDate.now());
 
-        // Creazione di concorrenti
-        Concorrente concorrente1 = new Concorrente(
-                "Mario",
-                "Rossi",
-                "mario.rossi@example.com",
-                LocalDate.of(2023, 6, 1), // Data di registrazione
-                LocalDate.now(), // Data di iscrizione
-                true,
-                team1
-        );
+        System.out.println("\nTest Giudice:");
+        System.out.println("Nome: " + (giudice.getNome().equals("Laura") ? "OK" : "Errore"));
+        System.out.println("Cognome: " + (giudice.getCognome().equals("Verdi") ? "OK" : "Errore"));
 
-        Concorrente concorrente2 = new Concorrente(
-                "Giulia",
-                "Bianchi",
-                "giulia.bianchi@example.com",
-                LocalDate.of(2023, 8, 20), // Data di registrazione
-                LocalDate.now(), // Data di iscrizione
-                true,
-                team2
-        );
+        // Test Documento
+        Documento documento = new Documento("Descrizione dettagliata", "Titolo Importante",
+                LocalDate.now(), "DOCX", 2.0, "Relazione");
 
-        // Aggiunta dei concorrenti ai team
-        team1.aggiungiNuovoConcorrente(concorrente1);
-        team2.aggiungiNuovoConcorrente(concorrente2);
+        System.out.println("\nTest Documento:");
+        System.out.println("Descrizione: " + (documento.getDescrizione().equals("Descrizione dettagliata") ? "OK" : "Errore"));
+        System.out.println("Titolo: " + (documento.getTitolo().equals("Titolo Importante") ? "OK" : "Errore"));
+        System.out.println("Formato: " + (documento.getFormato().equals("DOCX") ? "OK" : "Errore"));
 
-        // Creazione di documenti
-        Documento documento1 = new Documento();
-        documento1.setDescrizione("Descrizione del documento 1");
-        documento1.setTitolo("Titolo del documento 1");
-        team1.aggiungiDocumento(documento1);
+        // Test Valutazione
+        try {
+            Valutazione valutazione = new Valutazione(team, giudice, 9, "Ottima presentazione!");
+            team.aggiungiNuovaValutazione(valutazione);
+            giudice.aggiungiNuovaValutazione(valutazione);
 
-        Documento documento2 = new Documento();
-        documento2.setDescrizione("Descrizione del documento 2");
-        documento2.setTitolo("Titolo del documento 2");
-        team2.aggiungiDocumento(documento2);
-
-        // Creazione di valutazioni
-        Valutazione valutazione1 = new Valutazione();
-        valutazione1.setTeam(team1);
-        valutazione1.setPunteggio(8);
-        valutazione1.setFeedback("Ottimo lavoro!");
-        team1.aggiungiNuovaValutazione(valutazione1);
-
-        Valutazione valutazione2 = new Valutazione();
-        valutazione2.setTeam(team2);
-        valutazione2.setPunteggio(7);
-        valutazione2.setFeedback("Buon risultato!");
-        team2.aggiungiNuovaValutazione(valutazione2);
-
-        // Creazione di aggiornamenti
-        Aggiornamento aggiornamento1 = new Aggiornamento();
-        aggiornamento1.setTeam(team1);
-        aggiornamento1.setContenuto("Aggiornamento tecnico relativo al progetto.");
-        team1.aggiungiNuovoAggiornamento(aggiornamento1);
-
-        Aggiornamento aggiornamento2 = new Aggiornamento();
-        aggiornamento2.setTeam(team2);
-        aggiornamento2.setContenuto("Aggiornamento creativo sul design.");
-        team2.aggiungiNuovoAggiornamento(aggiornamento2);
-
-        // Output: Verifica delle relazioni e dei dati
-        System.out.println(hackathon);
-        System.out.println("Organizzatori: " + hackathon.getOrganizzatori());
-        System.out.println("Teams: " + hackathon.getTeams());
-        System.out.println("Concorrenti nel team 1: " + team1.getConcorrenti());
-        System.out.println("Documenti nel team 1: " + team1.getDocumenti());
-        System.out.println("Valutazioni nel team 1: " + team1.getValutazioni());
-        System.out.println("Aggiornamenti nel team 1: " + team1.getAggiornamenti());
-
-        System.out.println("Concorrenti nel team 2: " + team2.getConcorrenti());
-        System.out.println("Documenti nel team 2: " + team2.getDocumenti());
-        System.out.println("Valutazioni nel team 2: " + team2.getValutazioni());
-        System.out.println("Aggiornamenti nel team 2: " + team2.getAggiornamenti());
+            System.out.println("\nTest Valutazione:");
+            System.out.println("Team: " + (valutazione.getTeam() != null ? "OK" : "Errore"));
+            System.out.println("Giudice: " + (valutazione.getGiudice() != null ? "OK" : "Errore"));
+            System.out.println("Punteggio: " + (valutazione.getPunteggio() == 9 ? "OK" : "Errore"));
+            System.out.println("Feedback: " + (valutazione.getFeedback().equals("Ottima presentazione!") ? "OK" : "Errore"));
+        } catch(IllegalArgumentException e) {
+            System.out.println("Errore: " + e.getMessage());
+        }
+        System.out.println("\nTest completati!");
     }
 }

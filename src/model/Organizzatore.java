@@ -19,4 +19,10 @@ public class Organizzatore extends Utente{
     public void setRuolo(String ruolo) {
         this.ruolo = ruolo;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", ruolo='" + ruolo +'}';
+    }
 }

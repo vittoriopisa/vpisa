@@ -5,6 +5,21 @@ public class Commento {
     private Giudice giudice;
     private String testo;
 
+    // Costruttore
+    public Commento(Documento documento, Giudice giudice, String testo) {
+        if (documento != null) {
+            this.documento = documento;
+            documento.aggiungiNuovoCommento(this);
+        }
+
+        if (giudice != null) {
+            this.giudice = giudice;
+            documento.aggiungiNuovoCommento(this);
+        }
+
+        this.testo = testo;
+    }
+
     // Setter per Documento
     public void setDocumento(Documento documento) {
         if (documento != null) {
@@ -40,5 +55,14 @@ public class Commento {
     // Getter per Testo
     public String getTesto() {
         return testo;
+    }
+
+    @Override
+    public String toString() {
+        return "Commento{" +
+                "documento=" + (documento != null ? documento.toString() : "null") +
+                ", giudice=" + (giudice != null ? giudice.toString() : "null") +
+                ", testo='" + testo +
+                '}';
     }
 }

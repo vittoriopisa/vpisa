@@ -40,4 +40,12 @@ public class Giudice extends Utente{
     public List<Commento> getCommenti() {
         return commenti;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", valutazioni=" + valutazioni +
+                ", commenti=" + commenti +
+                '}';
+    }
 }

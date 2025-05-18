@@ -13,8 +13,10 @@ public class Team {
     private List<Valutazione> valutazioni; // Lista delle valutazioni per il team
 
     // Costruttore
-    public Team(String nome) {
+    public Team(String nome,int dimensione,Hackathon hackathon) {
         this.nome = nome;
+        this.dimensione = dimensione;
+        this.hackathon = hackathon;
         this.concorrenti = new ArrayList<>();
         this.documenti = new ArrayList<>();
         this.aggiornamenti = new ArrayList<>();
@@ -96,5 +98,18 @@ public class Team {
 
     public void setDimensione(int dimensione) {
         this.dimensione = dimensione;
+    }
+
+    @Override
+    public String toString() {
+        return "Team{" +
+                "nome='" + nome +
+                ", dimensione=" + dimensione +
+                ", hackathon=" + (hackathon != null ? hackathon.getNome() : "null") +
+                ", concorrenti=" + concorrenti +
+                ", documenti=" + documenti +
+                ", aggiornamenti=" + aggiornamenti +
+                ", valutazioni=" + valutazioni +
+                '}';
     }
 }

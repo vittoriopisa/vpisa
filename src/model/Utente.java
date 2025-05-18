@@ -8,18 +8,15 @@ public class Utente {
     protected String email;
     protected LocalDate dataRegistrazione;
 
-    // Costruttore senza parametri
-    public Utente() {
-        // Inizializza i campi con valori di default
-        this.nome = "";
-        this.cognome = "";
-        this.email = "";
-    }
 
-    // Costruttore con parametri
-    public Utente(String nome, String cognome, String email,LocalDate dataRegistrazione) {
+
+    // Costruttore
+    public Utente(String nome, String cognome, String email,LocalDate dataRegistrazione) throws IllegalArgumentException{
         this.nome = nome;
         this.cognome = cognome;
+        if(!email.contains("@")) {
+            throw new IllegalArgumentException("l'email deve contenere @");
+        }
         this.email = email;
         this.dataRegistrazione = dataRegistrazione;
     }
@@ -45,10 +42,12 @@ public class Utente {
         return email;
     }
 
-    public void setEmail(String email) {
-        if(email.contains("@")) {
-            this.email = email;
+    public void setEmail(String email) throws IllegalArgumentException {
+        if(!email.contains("@")) {
+            throw new IllegalArgumentException("l'email deve contenere @");
         }
+            this.email = email;
+
     }
 
     public LocalDate getDataRegistrazione() {
@@ -57,5 +56,15 @@ public class Utente {
 
     public void setDataRegistrazione(LocalDate dataRegistrazione) {
         this.dataRegistrazione = dataRegistrazione;
+    }
+
+    @Override
+    public String toString() {
+        return "Utente{" +
+                "nome='" + nome +
+                ", cognome='" + cognome +
+                ", email='" + email +
+                ", dataRegistrazione=" + dataRegistrazione +
+                '}';
     }
 }
