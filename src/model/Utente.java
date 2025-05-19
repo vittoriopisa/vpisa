@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Utente {
     protected String nome;
@@ -19,6 +20,18 @@ public class Utente {
         }
         this.email = email;
         this.dataRegistrazione = dataRegistrazione;
+    }
+
+    // Metodo semplice per scegliere un Hackathon senza filtri avanzati
+    public Hackathon scegliHackathon(List<Hackathon> hackathonsDisponibili) throws RegistrazioneScadutaException {
+        if (hackathonsDisponibili.isEmpty()) {
+            throw new RegistrazioneScadutaException("Nessun Hackathon disponibile!");
+        }
+
+        Hackathon hackathonScelto = hackathonsDisponibili.get(0); // Seleziona il primo disponibile
+        System.out.println(nome + " ha scelto l'Hackathon: " + hackathonScelto.getNome());
+
+        return hackathonScelto;
     }
 
     // Getter e Setter

@@ -14,7 +14,7 @@ public class Commento {
 
         if (giudice != null) {
             this.giudice = giudice;
-            documento.aggiungiNuovoCommento(this);
+            giudice.aggiungiNuovoCommento(this);
         }
 
         this.testo = testo;

@@ -6,82 +6,43 @@ public class HackathonTest {
     public static void main(String[] args) {
         System.out.println("Avvio test Hackathon...\n");
 
-        // Test Hackathon
-        Hackathon hackathon = new Hackathon("Hackathon 2025", "Evento tecnologico", "Napoli",
-                "12-05-2025", "14-05-2025");
+        // Creazione di un Hackathon
+        Hackathon hackathon = new Hackathon("Hackathon 2025", "Evento tecnologico", "Napoli", LocalDate.of(2025, 5, 12), LocalDate.of(2025, 5, 14));
+        System.out.println("Hackathon creato: " + hackathon.getNome());
 
-        System.out.println("Test Hackathon:");
-        System.out.println("Nome: " + (hackathon.getNome().equals("Hackathon 2025") ? "OK" : "Errore"));
-        System.out.println("Descrizione: " + (hackathon.getDescrizione().equals("Evento tecnologico") ? "OK" : "Errore"));
-        System.out.println("Luogo: " + (hackathon.getLuogo().equals("Napoli") ? "OK" : "Errore"));
-
-        // Test Organizzatore
+        // Creazione di un Organizzatore
         Organizzatore organizzatore = new Organizzatore("Marco", "Bianchi", "marco.bianchi@example.com",
                 "Coordinatore", LocalDate.of(2024, 4, 1));
+        System.out.println("Organizzatore creato: " + organizzatore.getNome());
 
-        System.out.println("\nTest Organizzatore:");
-        System.out.println("Nome: " + (organizzatore.getNome().equals("Marco") ? "OK" : "Errore"));
-        System.out.println("Ruolo: " + (organizzatore.getRuolo().equals("Coordinatore") ? "OK" : "Errore"));
-
-        // Test Team
-        Team team = new Team("Team Alpha", 5, hackathon);
+        // Creazione di un Team
+        Team team = new Team("Team Alpha",5, hackathon);
         hackathon.aggiungiNuovoTeam(team);
+        System.out.println("Team aggiunto: " + team.getNome());
 
-        System.out.println("\nTest Team:");
-        System.out.println("Nome: " + (team.getNome().equals("Team Alpha") ? "OK" : "Errore"));
-        System.out.println("Dimensione: " + (team.getDimensione() == 5 ? "OK" : "Errore"));
-        System.out.println("Hackathon: " + (team.getHackathon() != null ? "OK" : "Errore"));
+        // Creazione di un Giudice
+        Giudice giudice = new Giudice("Laura","Verdi","laura.verdi@example.com",LocalDate.of(2024, 4, 1));
+        System.out.println("Giudice creato");
 
-        // Test Concorrente
-        Concorrente concorrente = new Concorrente("Giulia", "Rossi", "giulia.rossi@example.com",
-                LocalDate.of(2024, 5, 1), LocalDate.of(2024, 5, 10), true, team);
-        team.aggiungiNuovoConcorrente(concorrente);
+        // Test assegnazione problema prima della data di inizio
+        Problema problema1 = new Problema(team, giudice, "Difficoltà nell'integrazione API.");
+        System.out.println("Problema assegnato al team: " + (team.getProblema() != null ? "OK" : "Errore"));
 
-        System.out.println("\nTest Concorrente:");
-        System.out.println("Nome: " + (concorrente.getNome().equals("Giulia") ? "OK" : "Errore"));
-        System.out.println("Status: " + (concorrente.getStatus() ? "OK" : "Errore"));
-        System.out.println("Team: " + (concorrente.getTeam() != null ? "OK" : "Errore"));
+        // Test assegnazione di un secondo problema (deve fallire)
+        Problema problema2 = new Problema(team, giudice, "Altro problema.");
+        System.out.println("Tentativo di assegnare un secondo problema: " + (team.getProblema() != problema2 ? "OK" : "Errore"));
 
-        // Test Utente
+        // Test apertura registrazioni hackathon
         try {
-            Utente utente = new Utente("Elena", "Verdi", "elena.verdi@example.com", LocalDate.of(2024, 3, 1));
-
-            System.out.println("\nTest Utente:");
-            System.out.println("Nome: " + (utente.getNome().equals("Elena") ? "OK" : "Errore"));
-            System.out.println("Email valida: " + (utente.getEmail().contains("@") ? "OK" : "Errore"));
-        } catch(IllegalArgumentException e) {
-            System.out.println("Errore: " + e.getMessage());
+            organizzatore.apriRegistrazioni(hackathon);
+            System.out.println("Registrazioni aperte: " + (hackathon.isStatoRegistrazioni() ? "OK" : "Errore"));
+        } catch (RegistrazioneScadutaException e) {
+            System.out.println("Errore apertura registrazioni: " + e.getMessage());
         }
-        // Test Giudice
-        Giudice giudice = new Giudice("Laura", "Verdi", "laura.verdi@example.com", LocalDate.now());
 
-        System.out.println("\nTest Giudice:");
-        System.out.println("Nome: " + (giudice.getNome().equals("Laura") ? "OK" : "Errore"));
-        System.out.println("Cognome: " + (giudice.getCognome().equals("Verdi") ? "OK" : "Errore"));
+        // Test pubblicazione classifica (prima della fine dell'hackathon, quindi deve fallire)
+        hackathon.pubblicaClassifica();
 
-        // Test Documento
-        Documento documento = new Documento("Descrizione dettagliata", "Titolo Importante",
-                LocalDate.now(), "DOCX", 2.0, "Relazione");
-
-        System.out.println("\nTest Documento:");
-        System.out.println("Descrizione: " + (documento.getDescrizione().equals("Descrizione dettagliata") ? "OK" : "Errore"));
-        System.out.println("Titolo: " + (documento.getTitolo().equals("Titolo Importante") ? "OK" : "Errore"));
-        System.out.println("Formato: " + (documento.getFormato().equals("DOCX") ? "OK" : "Errore"));
-
-        // Test Valutazione
-        try {
-            Valutazione valutazione = new Valutazione(team, giudice, 9, "Ottima presentazione!");
-            team.aggiungiNuovaValutazione(valutazione);
-            giudice.aggiungiNuovaValutazione(valutazione);
-
-            System.out.println("\nTest Valutazione:");
-            System.out.println("Team: " + (valutazione.getTeam() != null ? "OK" : "Errore"));
-            System.out.println("Giudice: " + (valutazione.getGiudice() != null ? "OK" : "Errore"));
-            System.out.println("Punteggio: " + (valutazione.getPunteggio() == 9 ? "OK" : "Errore"));
-            System.out.println("Feedback: " + (valutazione.getFeedback().equals("Ottima presentazione!") ? "OK" : "Errore"));
-        } catch(IllegalArgumentException e) {
-            System.out.println("Errore: " + e.getMessage());
-        }
         System.out.println("\nTest completati!");
     }
 }

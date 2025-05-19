@@ -1,5 +1,6 @@
 package model;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,21 +8,26 @@ public class Hackathon {
     private String nome; // Nome dell'Hackathon
     private String descrizione; // Descrizione dell'Hackathon
     private String luogo; // Luogo dell'Hackathon
-    private String dataInizio; // Data di inizio
-    private String dataFine; // Data di fine
+    private LocalDate dataInizio; // Data di inizio
+    private LocalDate dataFine; // Data di fine
     private List<Team> teams; // Lista dei team partecipanti
-    private List<Organizzatore> organizzatori; // Lista degli organizzatori
+    private Organizzatore organizzatore;
+    private boolean statoRegistrazioni;
 
     // Costruttore con tutti i campi
-    public Hackathon(String nome, String descrizione, String luogo, String dataInizio, String dataFine) {
+    public Hackathon(String nome, String descrizione, String luogo, LocalDate dataInizio, LocalDate dataFine) {
         this.nome = nome;
         this.descrizione = descrizione;
         this.luogo = luogo;
         this.dataInizio = dataInizio;
         this.dataFine = dataFine;
         this.teams = new ArrayList<>();
-        this.organizzatori = new ArrayList<>();
+        this.organizzatore = organizzatore;
+        this.statoRegistrazioni = false;
+
     }
+
+
 
     // Getter e Setter
     public String getNome() {
@@ -48,19 +54,19 @@ public class Hackathon {
         this.luogo = luogo;
     }
 
-    public String getDataInizio() {
+    public LocalDate getDataInizio() {
         return dataInizio;
     }
 
-    public void setDataInizio(String dataInizio) {
+    public void setDataInizio(LocalDate dataInizio) {
         this.dataInizio = dataInizio;
     }
 
-    public String getDataFine() {
+    public LocalDate getDataFine() {
         return dataFine;
     }
 
-    public void setDataFine(String dataFine) {
+    public void setDataFine(LocalDate dataFine) {
         this.dataFine = dataFine;
     }
 
@@ -75,13 +81,41 @@ public class Hackathon {
         }
     }
 
-    public List<Organizzatore> getOrganizzatori() {
-        return organizzatori;
+    public Organizzatore getOrganizzatore() {
+        return organizzatore;
     }
 
-    public void aggiungiNuovoOrganizzatore(Organizzatore nuovoOrganizzatore) {
-        if (nuovoOrganizzatore != null && !this.organizzatori.contains(nuovoOrganizzatore)) {
-            this.organizzatori.add(nuovoOrganizzatore);
+
+    public void setOrganizzarore(Organizzatore nuovoOrganizzatore) {
+        if(nuovoOrganizzatore != null) {
+            this.organizzatore = organizzatore;
+        }
+    }
+
+    public void setStatoRegistrazioni(boolean stato) {
+        this.statoRegistrazioni = stato;
+    }
+
+    public boolean isStatoRegistrazioni() {
+        return this.statoRegistrazioni;
+    }
+
+    public void pubblicaClassifica() {
+        LocalDate oggi = LocalDate.now();
+
+        if (oggi.isBefore(dataFine)) {
+            System.out.println("L'Hackathon non è ancora terminato! Classifica non disponibile.");
+            return;
+        }
+
+        System.out.println("\n Classifica Finale dell'Hackathon: " + nome);
+
+        for (Team team : teams) {
+            double punteggioMedio = team.getValutazioni().stream()
+                    .mapToInt(Valutazione::getPunteggio)
+                    .average().orElse(0.0);
+
+            System.out.println(team.getNome() + " - Punteggio Medio: " + punteggioMedio);
         }
     }
 
@@ -94,7 +128,7 @@ public class Hackathon {
                 ", dataInizio='" + dataInizio +
                 ", dataFine='" + dataFine +
                 ", teams=" + teams +
-                ", organizzatori=" + organizzatori +
+                ", organizzatore=" + (organizzatore != null ? organizzatore.toString() : "Nessun organizzatore") +
                 '}';
     }
 }

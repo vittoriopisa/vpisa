@@ -11,6 +11,7 @@ public class Team {
     private List<Documento> documenti; // Documenti associati al team
     private List<Aggiornamento> aggiornamenti; // Lista degli aggiornamenti per il team
     private List<Valutazione> valutazioni; // Lista delle valutazioni per il team
+    private Problema problema;
 
     // Costruttore
     public Team(String nome,int dimensione,Hackathon hackathon) {
@@ -21,6 +22,21 @@ public class Team {
         this.documenti = new ArrayList<>();
         this.aggiornamenti = new ArrayList<>();
         this.valutazioni = new ArrayList<>();
+        this.problema=problema;
+    }
+
+    // Metodo per assegnare un problema
+    public void assegnaProblema(Problema problema) {
+        if (this.problema == null) {
+            this.problema = problema;
+        } else {
+            System.out.println("Errore: Il team " + nome + " ha già un problema assegnato!");
+        }
+    }
+
+    // Getter per ottenere il problema assegnato
+    public Problema getProblema() {
+        return problema;
     }
 
     // Metodo per aggiungere un nuovo aggiornamento
