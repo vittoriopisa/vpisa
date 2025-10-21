@@ -1,80 +1,62 @@
-
 package model;
 
-import model.exceptions.InvalidDataException;
-
-import model.exceptions.RegistrazioneScadutaException;
-
-
+import java.util.ArrayList;
+import java.util.List;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
+public class Organizzatore extends Utente{
+    private String ruolo;// Ruolo dell'organizzatore (es. coordinatore, assistente)
+    private List<Giudice> giudici;
 
-/**
- * Rappresenta un organizzatore di un {@link Hackathon}.
- * <p>
- * L’organizzatore è un particolare tipo di {@link Utente}
- * che ha il compito di gestire e amministrare l’evento.
- * </p>
- */
-public class Organizzatore extends Utente {
-
-
-    /**
-     * Crea un nuovo organizzatore senza hackathon associato.
-     *
-     * @param id               identificativo univoco dell’organizzatore
-     * @param nome             nome dell’organizzatore
-     * @param cognome          cognome dell’organizzatore
-     * @param email            email di registrazione
-     * @param plainPassword    password in chiaro
-     * @param dataRegistrazione data di registrazione
-     * @throws InvalidDataException se i dati non sono validi
-     */
-    public Organizzatore(int id,String nome, String cognome, String email,
-                       String plainPassword, LocalDate dataRegistrazione) throws InvalidDataException {
-        super(id,nome, cognome, email, plainPassword, dataRegistrazione);
-
+    // Costruttore
+    public Organizzatore(String nome, String cognome, String email, String ruolo, LocalDate dataRegistrazione) {
+        super(nome, cognome, email, dataRegistrazione); // Richiama il costruttore della classe base Utente
+        this.ruolo = ruolo;
+        this.giudici = new ArrayList<>();
     }
 
+    // Metodo per aprire le registrazioni verificando la data di inizio
+    public void apriRegistrazioni(Hackathon hackathon) throws RegistrazioneScadutaException {
+        if (hackathon == null) return;
 
+        LocalDate oggi = LocalDate.now();
+        long giorniAllaDataInizio = ChronoUnit.DAYS.between(oggi, hackathon.getDataInizio());
 
+        if (giorniAllaDataInizio < 2) {
+            throw new RegistrazioneScadutaException("Registrazioni chiuse: meno di 2 giorni all'evento.");
+        }
 
-
-
-    /**
-     * Costruttore "leggero" con email (usa il costruttore protetto di Utente).
-     * Utile per rappresentazioni in memoria (visualizzazione, parsing da DAO, ecc.).
-     *
-     * @param id      identificativo univoco dell'organizzatore
-     * @param nome    il nome dell'organizzatore
-     * @param cognome il cognome dell'organizzatore
-     * @param email l'email dell'organizzatore
-     *  @throws InvalidDataException se i dati inseriti non sono validi
-     */
-    public Organizzatore(int id, String nome, String cognome, String email) throws InvalidDataException {
-        super(id, nome, cognome, email);
+        hackathon.setStatoRegistrazioni(true);
+        System.out.println("Registrazioni aperte per l'hackathon: " + hackathon.getNome());
     }
 
-    /*public Organizzatore(int id, String nome, String cognome) throws InvalidDataException {
-        super(id, nome, cognome, "", "", null);
-    }*/
+    // Metodo per selezionare i giudici tra quelli disponibili
+    public void selezionaGiudici(List<Giudice> giudiciDisponibili, List<Giudice> giudiciDaSelezionare) {
+        for (Giudice giudice : giudiciDaSelezionare) {
+            if (giudiciDisponibili.contains(giudice) && !giudici.contains(giudice)) {
+                giudici.add(giudice);
+            }
+        }
+    }
 
+    // Getter per ottenere la lista dei giudici selezionati
+    public List<Giudice> getGiudiciSelezionati() {
+        return giudici;
+    }
 
+    // Getter e Setter per il ruolo
+    public String getRuolo() {
+        return ruolo;
+    }
 
+    public void setRuolo(String ruolo) {
+        this.ruolo = ruolo;
+    }
 
-
-
-    /**
-     * Restituisce una rappresentazione testuale dell’organizzatore,
-     * includendo nome e cognome.
-     *
-     * @return stringa rappresentativa dell’organizzatore
-     */
     @Override
     public String toString() {
-        return String.format("Organizzatore{nome='%s %s'}",
-                getNome(), getCognome());
+        return super.toString() +
+                ", ruolo='" + ruolo +'}';
     }
 }
-
-
