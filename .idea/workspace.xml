@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b02a233-3eb1-450f-a60d-7432b67dd0ac" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Exception" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vittoriopisa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vittoriopisa/vpisa.git&quot;,
+    &quot;accountId&quot;: &quot;a2919f95-a9c3-4a88-8d42-997a27fa87a6&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/dao/AggiornamentoDAO.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2vsNJZZUElTuXZJ7n7A3XVEjKW0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AppLauncher.executor": "Run",
+    "Application.HackathonTest.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MainApp.executor": "Run",
+    "Application.PasswordHasher.executor": "Run",
+    "Application.PasswordUpdater.executor": "Run",
+    "Application.ProblemTest.executor": "Run",
+    "Application.TestBottone.executor": "Run",
+    "Application.TestCaricamentoGiudici.executor": "Run",
+    "Application.TestDebugListaGiudici.executor": "Run",
+    "Application.TestJTableGiudici.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/vpisa/IdeaProjects/untitled/dominioproblemahackathon.vpp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/vpisa/IdeaProjects/untitled/MainModule/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vpisa\IdeaProjects\untitled\src\main\resources" />
+      <recent name="C:\Users\vpisa\IdeaProjects\untitled\src\main\java" />
+      <recent name="C:\Users\vpisa\IdeaProjects\untitled\src\main" />
+      <recent name="C:\Users\vpisa\IdeaProjects\untitled\src" />
+      <recent name="C:\Users\vpisa\IdeaProjects\untitled\main" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="main.java" />
+      <recent name="java" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b02a233-3eb1-450f-a60d-7432b67dd0ac" name="Changes" comment="" />
+      <created>1744929755106</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744929755106</updated>
+      <workItem from="1744929756761" duration="9218000" />
+      <workItem from="1744963972383" duration="633000" />
+      <workItem from="1745068234379" duration="939000" />
+      <workItem from="1745095310131" duration="13994000" />
+      <workItem from="1745308121029" duration="10230000" />
+      <workItem from="1745320965691" duration="3668000" />
+      <workItem from="1745507919580" duration="1681000" />
+      <workItem from="1745529253836" duration="1801000" />
+      <workItem from="1746399588381" duration="1426000" />
+      <workItem from="1747036824443" duration="1025000" />
+      <workItem from="1747045898741" duration="6035000" />
+      <workItem from="1747564788855" duration="374000" />
+      <workItem from="1747565181781" duration="2647000" />
+      <workItem from="1747567867959" duration="2074000" />
+      <workItem from="1747577338321" duration="707000" />
+      <workItem from="1747578068706" duration="3343000" />
+      <workItem from="1747589685251" duration="75000" />
+      <workItem from="1747589773274" duration="2017000" />
+      <workItem from="1747639716552" duration="26217000" />
+      <workItem from="1747684034275" duration="12412000" />
+      <workItem from="1747732839994" duration="4483000" />
+      <workItem from="1747777737558" duration="1840000" />
+      <workItem from="1747832570555" duration="5727000" />
+      <workItem from="1747948218262" duration="9001000" />
+      <workItem from="1748010030345" duration="9141000" />
+      <workItem from="1748019516367" duration="26224000" />
+      <workItem from="1748110362128" duration="26758000" />
+      <workItem from="1748165347319" duration="18457000" />
+      <workItem from="1748185149149" duration="34950000" />
+      <workItem from="1748275982780" duration="10761000" />
+      <workItem from="1748356507464" duration="1300000" />
+      <workItem from="1748379668004" duration="33448000" />
+      <workItem from="1748466771938" duration="24043000" />
+      <workItem from="1748511234582" duration="5279000" />
+      <workItem from="1752736861839" duration="11039000" />
+      <workItem from="1753093347779" duration="3721000" />
+      <workItem from="1753275730429" duration="347000" />
+      <workItem from="1753284019958" duration="16167000" />
+      <workItem from="1753344623768" duration="12747000" />
+      <workItem from="1753426011580" duration="3224000" />
+      <workItem from="1753435645866" duration="8296000" />
+      <workItem from="1753530832069" duration="9297000" />
+      <workItem from="1753579452982" duration="4039000" />
+      <workItem from="1753607485696" duration="14577000" />
+      <workItem from="1753686954147" duration="19392000" />
+      <workItem from="1753859945066" duration="4000" />
+      <workItem from="1753859967889" duration="16655000" />
+      <workItem from="1753920290783" duration="131000" />
+      <workItem from="1753967159762" duration="8120000" />
+      <workItem from="1754079939300" duration="9940000" />
+      <workItem from="1754161657075" duration="8421000" />
+      <workItem from="1754291565117" duration="8136000" />
+      <workItem from="1754396810485" duration="1070000" />
+      <workItem from="1754397925052" duration="401000" />
+      <workItem from="1754398361677" duration="8584000" />
+      <workItem from="1754469532094" duration="4208000" />
+      <workItem from="1754573350550" duration="5112000" />
+      <workItem from="1754587954899" duration="18975000" />
+      <workItem from="1754727580982" duration="24302000" />
+      <workItem from="1754929902325" duration="27343000" />
+      <workItem from="1755156091517" duration="16578000" />
+      <workItem from="1755411493135" duration="11506000" />
+      <workItem from="1755456529532" duration="2028000" />
+      <workItem from="1755502402313" duration="3321000" />
+      <workItem from="1755505906882" duration="2170000" />
+      <workItem from="1755618734504" duration="6227000" />
+      <workItem from="1755669963741" duration="16727000" />
+      <workItem from="1755763139345" duration="1434000" />
+      <workItem from="1755781772453" duration="32923000" />
+      <workItem from="1755847571543" duration="42876000" />
+      <workItem from="1756016432863" duration="10529000" />
+      <workItem from="1756048767055" duration="16414000" />
+      <workItem from="1756147960686" duration="19629000" />
+      <workItem from="1756205185797" duration="16923000" />
+      <workItem from="1756372172997" duration="41713000" />
+      <workItem from="1756449106689" duration="27989000" />
+      <workItem from="1756626047932" duration="27509000" />
+      <workItem from="1756708108811" duration="7695000" />
+      <workItem from="1756792032016" duration="6882000" />
+      <workItem from="1756879520612" duration="5857000" />
+      <workItem from="1756900001519" duration="285000" />
+      <workItem from="1756967593486" duration="4481000" />
+      <workItem from="1757050673349" duration="109671000" />
+      <workItem from="1757227616362" duration="53553000" />
+      <workItem from="1757319537521" duration="15954000" />
+      <workItem from="1757396701816" duration="15924000" />
+      <workItem from="1757432023320" duration="23495000" />
+      <workItem from="1757485693489" duration="2452000" />
+      <workItem from="1757668509748" duration="22563000" />
+      <workItem from="1757770767988" duration="9007000" />
+      <workItem from="1757869483018" duration="1708000" />
+      <workItem from="1757871222818" duration="30432000" />
+      <workItem from="1757940199334" duration="17422000" />
+      <workItem from="1758002705922" duration="28082000" />
+      <workItem from="1758118499926" duration="6238000" />
+      <workItem from="1758137997314" duration="97476000" />
+      <workItem from="1758449183478" duration="48822000" />
+      <workItem from="1759423073903" duration="669000" />
+      <workItem from="1759574782365" duration="14224000" />
+      <workItem from="1759731773134" duration="9176000" />
+      <workItem from="1759905211197" duration="2767000" />
+      <workItem from="1760087651724" duration="12859000" />
+      <workItem from="1760126250711" duration="8004000" />
+      <workItem from="1760139153917" duration="5044000" />
+      <workItem from="1760173001435" duration="11712000" />
+      <workItem from="1760276557436" duration="10975000" />
+      <workItem from="1760340526817" duration="31274000" />
+      <workItem from="1760419969932" duration="8792000" />
+      <workItem from="1760458241902" duration="13216000" />
+      <workItem from="1760514357118" duration="2210000" />
+      <workItem from="1760598517640" duration="30869000" />
+      <workItem from="1760856131636" duration="44760000" />
+      <workItem from="1761026598814" duration="11565000" />
+      <workItem from="1761039093597" duration="1152000" />
+      <workItem from="1761040736385" duration="6072000" />
+      <workItem from="1761059743065" duration="13359000" />
+    </task>
+    <task id="LOCAL-00001" summary="modifiche">
+      <option name="closed" value="true" />
+      <created>1747589575576</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747589575576</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modifiche">
+      <option name="closed" value="true" />
+      <created>1747660298403</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747660298403</updated>
+    </task>
+    <task id="LOCAL-00003" summary="messaggio di commit">
+      <option name="closed" value="true" />
+      <created>1761028978768</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761028978768</updated>
+    </task>
+    <task id="LOCAL-00004" summary="messaggio di commit">
+      <option name="closed" value="true" />
+      <created>1761032761103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761032761103</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Primo commit" />
+    <MESSAGE value="modifiche" />
+    <MESSAGE value="messaggio di commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="messaggio di commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gui/HackathonForm.java</url>
+          <line>326</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gui/HackathonForm.java</url>
+          <line>289</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dao/impl/DocumentoDAOImpl.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dao/impl/DocumentoDAOImpl.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gui/MainFrame.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MainModule/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/untitled$HackathonTest.ic" NAME="HackathonTest Coverage Results" MODIFIED="1748019464641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+  </component>
+</project>
