@@ -24,7 +24,7 @@ public class ValutazionePanel extends JPanel{
     private final JTextField tfTeamId;
     private final JComboBox<Integer> cbPunteggio;
 
-    //private final JTextField tfPunteggio;
+
     private final JTextArea taFeedback;
 
     private final JTextArea taRisultati;
@@ -90,7 +90,7 @@ public class ValutazionePanel extends JPanel{
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.weightx = 0;
         gbc.weighty = 0;
-        row++;
+
 
 
 

@@ -122,7 +122,7 @@ public class CommentoPanel extends JPanel {
 
             int documentoId = Integer.parseInt(tfDocumentoId.getText());
 
-            // Controllo hackathon (documento → team → hackathon)
+
             int documentoHackathonId = controller.getHackathonIdByDocumento(documentoId);
             int giudiceHackathonId = controller.getHackathonIdByUser(loggedUserId);
 

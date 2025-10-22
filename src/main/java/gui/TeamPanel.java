@@ -311,13 +311,13 @@ public class TeamPanel extends JPanel {
         if (raw == null) return null;
         String s = raw.trim();
 
-        // formato "id - nome"
+
         if (s.contains(" - ")) {
             String[] parts = s.split(" - ", 2);
             if (parts.length > 1) return parts[1].trim();
         }
 
-        // formato "ID: 42, Nome: Hackathon AI, ..." oppure "Nome: ..."
+
         if (s.contains("ID:") || s.contains("Nome:")) {
             String[] parts = s.split(",\\s*");
             for (String p : parts) {
@@ -391,7 +391,7 @@ public class TeamPanel extends JPanel {
             }
 
             // Recupero concorrenti dal controller
-            taRisultati.setText(""); // pulizia area
+            taRisultati.setText("");
             var concorrenti = controller.getAllConcorrentiForTeam(teamId, hackathonId);
 
             if (concorrenti.isEmpty()) {
@@ -492,95 +492,7 @@ public class TeamPanel extends JPanel {
         }
     }
 
-    /*private void loadTeamOptions(int hackathonId) {
-        cbTeam.removeAllItems();
-        teamIds.clear();
 
-        try {
-            var teams = controller.getTeamsByHackathonId(hackathonId); // lista di stringhe raw
-
-            if (teams == null || teams.isEmpty()) {
-                cbTeam.addItem("Nessun team trovato");
-                teamIds.add(-1);
-                return;
-            }
-
-            for (String row : teams) {
-                if (row == null) continue;
-                String nome = null;
-                int id = -1;
-
-                String trimmed = row.trim();
-
-                // 1) formato comune "42 - NomeTeam"
-                if (trimmed.contains(" - ")) {
-                    String[] parts = trimmed.split(" - ", 2);
-                    try {
-                        id = Integer.parseInt(parts[0].trim());
-                    } catch (NumberFormatException ignored) { id = -1; }
-                    nome = parts.length > 1 ? parts[1].trim() : null;
-                }
-
-                // 2) formato "ID: 42, Nome: NomeTeam" o simili
-                if ((nome == null || nome.isEmpty()) && trimmed.contains("ID:")) {
-                    try {
-                        String[] parts = trimmed.split(",\\s*");
-                        for (String p : parts) {
-                            p = p.trim();
-                            if (p.startsWith("ID:")) {
-                                try { id = Integer.parseInt(p.split(":", 2)[1].trim()); } catch (Exception ignored) {}
-                            } else if (p.toLowerCase().startsWith("nome:") || p.toLowerCase().startsWith("name:")) {
-                                nome = p.split(":", 2)[1].trim();
-                            }
-                        }
-                    } catch (Exception ignored) {}
-                }
-
-                // 3) formato con ";" come usi altrove: "Nome;Descr;Luogo;..."
-                if ((nome == null || nome.isEmpty()) && trimmed.contains(";")) {
-                    try {
-                        String[] parts = trimmed.split(";", 2);
-                        if (parts.length >= 1) {
-                            nome = parts[0].trim();
-                        }
-                    } catch (Exception ignored) {}
-                }
-
-                // 4) fallback: se non siamo riusciti a estrarre il nome, proviamo a usare l'intera riga
-                if (nome == null || nome.isEmpty()) {
-                    // proviamo a rimuovere un possibile id iniziale "42 " prima del nome
-                    try {
-                        String maybeId = trimmed.split("\\s+", 2)[0];
-                        int possibleId = Integer.parseInt(maybeId);
-                        // se è un id, allora il resto è il nome
-                        if (trimmed.length() > maybeId.length()) {
-                            nome = trimmed.substring(maybeId.length()).trim();
-                            id = possibleId;
-                        }
-                    } catch (Exception ignored) {}
-                }
-
-                if (nome == null || nome.isEmpty()) {
-                    // se ancora nulla, usiamo la riga intera come "nome" (fallback)
-                    nome = trimmed;
-                }
-
-                // aggiungo alla combo solo il nome, e salvo l'id parallelo (o -1 se sconosciuto)
-                cbTeam.addItem(nome);
-                teamIds.add(id);
-            }
-
-            // se per qualche motivo non è stato aggiunto nulla
-            if (cbTeam.getItemCount() == 0) {
-                cbTeam.addItem("Nessun team trovato");
-                teamIds.add(-1);
-            }
-
-        } catch (Exception e) {
-            // messaggio amichevole all'utente, senza stack trace
-            JOptionPane.showMessageDialog(this, "Errore nel caricamento dei team: " + e.getMessage());
-        }
-    }*/
 
 
 

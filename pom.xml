@@ -15,6 +15,13 @@
         </repository>
     </repositories>
 
+    <properties>
+
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <maven.compiler.release>23</maven.compiler.release>
+    </properties>
+
     <dependencies>
         <!-- Dipendenza PostgreSQL -->
         <dependency>
@@ -34,5 +41,17 @@
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <testSourceDirectory>src/test/java</testSourceDirectory>
+
+        <plugins>
+            <!-- Plugin per il compilatore: usa release=23 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>23</release>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>

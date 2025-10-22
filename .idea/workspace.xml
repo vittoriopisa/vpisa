@@ -4,7 +4,159 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b02a233-3eb1-450f-a60d-7432b67dd0ac" name="Changes" comment="" />
+    <list default="true" id="8b02a233-3eb1-450f-a60d-7432b67dd0ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/app/MainApp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/app/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/app/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/controller/Controller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/controller/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/controller/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/AggiornamentoDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/CommentoDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/DocumentoDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/HackathonDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/ProblemaDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/TeamDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/UtenteDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/ValutazioneDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/AggiornamentoDAOImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/CommentoDAOImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/DocumentoDAOImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/HackathonDAOImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/ProblemaDAOImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/TeamDAOImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/UtenteDAOImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/ValutazioneDAOImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/impl/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/dao/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/db/DatabaseConnectionSingleton.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/db/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/db/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/AggiornamentoPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/CommentoPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/DocumentoPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/HackathonPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/LoginPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/LoginSuccessHandler.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/MainFrame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/ProblemaPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/RegistrazionePanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/TeamPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/UnioneTeamPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/ValutazionePanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/gui/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-18.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/legal/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/legal/dejavufonts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Aggiornamento.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Commento.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Concorrente.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Documento.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Giudice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Hackathon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Organizzatore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Problema.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Team.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Utente.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/Valutazione.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/exceptions/InvalidDataException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/exceptions/RegistrazioneScadutaException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/exceptions/TeamFullException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/exceptions/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/exceptions/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/factory/TestData.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/factory/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/factory/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/utils/ValidationUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/utils/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/model/utils/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/copy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSans-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSans-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSans-BoldOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSans-BoldOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSans-Oblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSans-Oblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSans.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSans.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSansMono-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSansMono-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSansMono-BoldOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSansMono-BoldOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSansMono-Oblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSansMono-Oblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSansMono.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSansMono.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSerif-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSerif-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSerif-BoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSerif-BoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSerif-Italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSerif-Italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSerif.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/DejaVuLGCSerif.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/fonts/dejavu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/resource-files/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/script-files/jquery-3.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/script-files/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/script-files/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/script-files/search-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/script-files/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/security/PasswordHasher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/security/PasswordSecurity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/security/PasswordUpdater.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/security/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/security/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/javadoc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/CommentoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/CommentoPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/HackathonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/HackathonPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/TeamPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/TeamPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/ValutazionePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/ValutazionePanel.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,43 +207,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AppLauncher.executor": "Run",
-    "Application.HackathonTest.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MainApp.executor": "Run",
-    "Application.PasswordHasher.executor": "Run",
-    "Application.PasswordUpdater.executor": "Run",
-    "Application.ProblemTest.executor": "Run",
-    "Application.TestBottone.executor": "Run",
-    "Application.TestCaricamentoGiudici.executor": "Run",
-    "Application.TestDebugListaGiudici.executor": "Run",
-    "Application.TestJTableGiudici.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vpisa/IdeaProjects/untitled/dominioproblemahackathon.vpp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/vpisa/IdeaProjects/untitled/MainModule/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AppLauncher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HackathonTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PasswordHasher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PasswordUpdater.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProblemTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestBottone.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestCaricamentoGiudici.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestDebugListaGiudici.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestJTableGiudici.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vpisa/IdeaProjects/untitled/dominioproblemahackathon.vpp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/vpisa/IdeaProjects/untitled/MainModule/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vpisa\IdeaProjects\untitled\src\main\resources" />
@@ -236,7 +388,8 @@
       <workItem from="1761026598814" duration="11565000" />
       <workItem from="1761039093597" duration="1152000" />
       <workItem from="1761040736385" duration="6072000" />
-      <workItem from="1761059743065" duration="13359000" />
+      <workItem from="1761059743065" duration="15415000" />
+      <workItem from="1761115177973" duration="2509000" />
     </task>
     <task id="LOCAL-00001" summary="modifiche">
       <option name="closed" value="true" />

@@ -330,9 +330,9 @@ public class HackathonPanel extends JPanel {
                 String nome = null;
                 int id = -1;
 
-                // --- Tentativi di parsing robusti per trovare ID e nome ---
 
-                // 1) Formato "id;nome;..."
+
+
                 if (row.contains(";")) {
                     String[] parts = row.split(";", 6);
                     String first = parts[0].trim();
@@ -342,7 +342,7 @@ public class HackathonPanel extends JPanel {
                     } catch (NumberFormatException ignored) {}
                 }
 
-                // 2) Formato "ID: 42, Nome: ..."
+
                 if (id == -1 && row.contains("ID:")) {
                     try {
                         String[] parts = row.split(",\\s*");
@@ -357,7 +357,7 @@ public class HackathonPanel extends JPanel {
                     } catch (Exception ignored) {}
                 }
 
-                // 3) Formato "42 - Nome..."
+
                 if (id == -1 && row.contains(" - ")) {
                     try {
                         String[] parts = row.split(" - ", 2);
@@ -377,7 +377,7 @@ public class HackathonPanel extends JPanel {
                     } catch (Exception ignored) {}
                 }
 
-                // --- Aggiungo solo il nome nella combo, e l'id nella lista parallela ---
+
                 cbHackathonId.addItem(nome != null && !nome.isEmpty() ? nome : row);
                 hackathonIds.add(id);
             }
